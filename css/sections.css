@@ -1,0 +1,130 @@
+/* ============================================================
+   ITWURZEL — Section Styles (Mintlify Light)
+   Alternating white / mist-gray backgrounds.
+   ============================================================ */
+
+/* ── Trust ── white */
+.trust-section {
+  background: var(--color-paper-white);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-16);
+}
+
+@media (max-width: 900px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .trust-grid { grid-template-columns: 1fr; } }
+
+
+/* ── Services ── mist gray */
+.services-section {
+  background: var(--surface-mist-gray);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-16);
+}
+
+@media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+
+
+/* ── Problems ── white */
+.problems-section {
+  background: var(--color-paper-white);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-12);
+  margin-bottom: var(--spacing-48);
+}
+
+@media (max-width: 900px) { .problem-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .problem-grid { grid-template-columns: 1fr; } }
+
+
+/* ── Process ── mist gray */
+.process-section {
+  background: var(--surface-mist-gray);
+}
+
+
+/* ── Security ── white */
+.security-section {
+  background: var(--color-paper-white);
+}
+
+.security-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-64);
+  align-items: flex-start;
+}
+
+.security-text h2 {
+  margin-bottom: var(--spacing-16);
+}
+
+.security-text p {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  opacity: 0.65;
+  max-width: 480px;
+}
+
+.feature-list {
+  background: var(--color-paper-white);
+  border: 1px solid var(--color-mist-gray);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-24);
+}
+
+@media (max-width: 768px) {
+  .security-content { grid-template-columns: 1fr; gap: var(--spacing-32); }
+}
+
+
+/* ── Why ── white */
+.why-section {
+  background: var(--color-paper-white);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-16);
+}
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid .why-card:nth-child(5) { grid-column: auto; }
+}
+@media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
+
+
+/* ── Credibility ── mist gray */
+.credibility-section {
+  background: var(--surface-mist-gray);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 var(--spacing-64);
+  max-width: 700px;
+}
+
+@media (max-width: 600px) { .principles-grid { grid-template-columns: 1fr; } }
+
+
+/* ── Final CTA ── white */
+.final-cta-section {
+  background: var(--color-paper-white);
+  padding: var(--section-gap) 0;
+}

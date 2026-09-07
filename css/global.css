@@ -1,0 +1,170 @@
+/* ============================================================
+   ITWURZEL — Global Styles (Mintlify Light)
+   White canvas, black text, Inter only.
+   ============================================================ */
+
+/* ── Base ── */
+body {
+  font-family: var(--font-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  letter-spacing: var(--tracking-body);
+  color: var(--color-true-black);
+  background-color: var(--color-paper-white);
+  overflow-x: hidden;
+  font-feature-settings: "ss01" on, "cv11" on;
+}
+
+/* ── Container ── */
+.container {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding-left: var(--spacing-24);
+  padding-right: var(--spacing-24);
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-inter);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-ink-black);
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, var(--text-display));
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+}
+
+h2 {
+  font-size: clamp(28px, 3.5vw, var(--text-heading));
+  letter-spacing: var(--tracking-heading);
+  line-height: var(--leading-heading);
+}
+
+h3 {
+  font-size: clamp(20px, 2.5vw, var(--text-heading-sm));
+  letter-spacing: var(--tracking-heading-sm);
+  line-height: var(--leading-heading-sm);
+}
+
+h4 {
+  font-size: var(--text-subheading);
+  letter-spacing: var(--tracking-subheading);
+  line-height: var(--leading-subheading);
+}
+
+p {
+  color: var(--color-true-black);
+  line-height: var(--leading-body);
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-true-black);
+  opacity: 0.7;
+  line-height: var(--leading-body);
+  max-width: 600px;
+}
+
+/* ── Eyebrow — Mint green uppercase label ── */
+.eyebrow {
+  font-family: var(--font-inter);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-caption);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caption);
+  color: var(--color-mint-green);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-16);
+}
+
+/* Decorative dot before eyebrow */
+.eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-mint-green);
+  flex-shrink: 0;
+}
+
+/* ── Links ── */
+a {
+  transition: color var(--transition-fast);
+}
+
+/* ── Sections ── */
+.section {
+  padding: var(--section-gap) 0;
+  position: relative;
+}
+
+.section__header {
+  margin-bottom: var(--spacing-48);
+  max-width: 640px;
+}
+
+.section__header .eyebrow {
+  margin-bottom: var(--spacing-12);
+}
+
+.section__header h2 {
+  margin-bottom: var(--spacing-16);
+}
+
+.section__header .lead {
+  margin-top: var(--spacing-12);
+}
+
+/* Centered header variant */
+.section__header--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section__header--center .lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-64) 0;
+  }
+  .section__header {
+    margin-bottom: var(--spacing-32);
+  }
+}
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger .reveal:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger .reveal:nth-child(2) { transition-delay: 60ms; }
+.reveal-stagger .reveal:nth-child(3) { transition-delay: 120ms; }
+.reveal-stagger .reveal:nth-child(4) { transition-delay: 180ms; }
+.reveal-stagger .reveal:nth-child(5) { transition-delay: 240ms; }
+.reveal-stagger .reveal:nth-child(6) { transition-delay: 300ms; }
+
+/* ── Selection ── */
+::selection {
+  background: rgba(12, 140, 94, 0.15);
+  color: var(--color-ink-black);
+}

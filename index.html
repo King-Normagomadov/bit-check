@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BitCheck — Zuverlässige IT. Sicheres Unternehmen. | IT-Services für kleine Unternehmen in Bayern</title>
+  <meta name="description" content="BitCheck bietet professionelle IT-Dienstleistungen für kleine Unternehmen in Bayern. Managed IT-Support, Netzwerk, Microsoft 365, Backup und Sicherheit — in München, Landshut und Umgebung.">
+  <meta name="keywords" content="IT Support Landshut, Managed IT Services Bayern, IT Dienstleistungen München, IT Support für kleine Unternehmen, Microsoft 365 Support, Netzwerk Support Bayern">
+  <meta name="author" content="BitCheck">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.bitcheck.de/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BitCheck — Reliable IT. Secure Business.">
+  <meta property="og:description" content="Professional IT services for small businesses in Bavaria. Managed IT support, networking, Microsoft 365, backup and security.">
+  <meta property="og:url" content="https://www.bitcheck.de/">
+  <meta property="og:site_name" content="BitCheck">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="de" href="https://www.bitcheck.de/">
+  <link rel="alternate" hreflang="en" href="https://www.bitcheck.de/?lang=en">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BitCheck",
+    "description": "Professional IT services for small businesses in Bavaria. Managed IT support, networking, Microsoft 365, backup and security.",
+    "url": "https://www.bitcheck.de",
+    "areaServed": [
+      { "@type": "State", "name": "Bavaria" },
+      { "@type": "City", "name": "Munich" },
+      { "@type": "City", "name": "Landshut" }
+    ],
+    "serviceType": ["Managed IT Services", "IT Support", "Network Infrastructure", "Microsoft 365 Administration", "Backup & Business Continuity", "IT Consulting"],
+    "knowsLanguage": ["de", "en"],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="BitCheck Home">
+        <span class="navbar__logo-img" aria-hidden="true"></span>
+        BitCheck
+      </a>
+
+      <div class="navbar__menu" id="nav-menu">
+        <div class="navbar__links">
+          <a href="index.html" class="navbar__link is-active" data-i18n="nav.home">Startseite</a>
+          <a href="services.html" class="navbar__link" data-i18n="nav.services">Leistungen</a>
+          <a href="about.html" class="navbar__link" data-i18n="nav.about">Über uns</a>
+          <a href="insights.html" class="navbar__link" data-i18n="nav.insights">Insights</a>
+          <a href="contact.html" class="navbar__link" data-i18n="nav.contact">Kontakt</a>
+        </div>
+        <div class="navbar__actions">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button class="lang-toggle__btn" data-lang="de" type="button">DE</button>
+            <button class="lang-toggle__btn" data-lang="en" type="button">EN</button>
+          </div>
+          <a href="contact.html" class="btn btn--primary btn--sm navbar__cta" data-i18n="nav.cta">IT-Check buchen</a>
+        </div>
+      </div>
+
+      <button class="navbar__hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" id="nav-overlay"></div>
+  </nav>
+
+
+  <main>
+    <!-- ═══════════════════════════════════════════════
+         SECTION 1 — HERO
+         ═══════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="hero-network-canvas"></canvas>
+
+      <div class="hero__content">
+        <span class="hero__eyebrow" data-i18n="hero.eyebrow">IT-DIENSTLEISTUNGEN FÜR KLEINE UNTERNEHMEN</span>
+        <h1 class="hero__title">
+          <span data-i18n="hero.title.1">Zuverlässige IT.</span><br>
+          <span class="highlight" data-i18n="hero.title.2">Sicheres Unternehmen.</span>
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          BitCheck unterstützt kleine und wachsende Unternehmen beim Aufbau, der Verwaltung und der Verbesserung der Technologie-Infrastruktur, auf die sie täglich angewiesen sind.
+        </p>
+        <p class="hero__subtitle-secondary" data-i18n="hero.subtitle2">
+          Von Netzwerken über Microsoft 365 bis hin zu Backups, Monitoring und laufendem IT-Support — wir halten Ihre Technologie zuverlässig, sicher und verwaltbar.
+        </p>
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--primary-light btn--lg" data-i18n="hero.cta.primary">
+            IT-Check buchen <span class="btn__arrow">→</span>
+          </a>
+          <a href="services.html" class="btn btn--secondary-light btn--lg" data-i18n="hero.cta.secondary">
+            Unsere Leistungen entdecken
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span data-i18n="hero.scroll">Scrollen</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 2 — TRUST / VALUES
+         ═══════════════════════════════════════════════ -->
+    <section class="section trust-section" id="trust">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 data-i18n="trust.title">IT, die leise im Hintergrund funktioniert.</h2>
+          <p class="lead" data-i18n="trust.subtitle">Ihre Technologie soll Ihrem Unternehmen helfen — nicht zum nächsten Problem werden.</p>
+        </div>
+
+        <div class="trust-grid reveal-stagger">
+          <!-- Reliable -->
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="trust-card__title" data-i18n="trust.reliable.title">Zuverlässig</h3>
+            <p class="trust-card__desc" data-i18n="trust.reliable.desc">Kritische Systeme verfügbar und funktionsfähig halten.</p>
+          </div>
+
+          <!-- Secure -->
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg>
+            </div>
+            <h3 class="trust-card__title" data-i18n="trust.secure.title">Sicher</h3>
+            <p class="trust-card__desc" data-i18n="trust.secure.desc">Sicherheitsgrundlagen in den täglichen IT-Betrieb integrieren.</p>
+          </div>
+
+          <!-- Documented -->
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3 class="trust-card__title" data-i18n="trust.documented.title">Dokumentiert</h3>
+            <p class="trust-card__desc" data-i18n="trust.documented.desc">Wissen, was Sie haben, wie es funktioniert und was Aufmerksamkeit braucht.</p>
+          </div>
+
+          <!-- Proactive -->
+          <div class="trust-card reveal">
+            <div class="trust-card__icon">
+              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 class="trust-card__title" data-i18n="trust.proactive.title">Proaktiv</h3>
+            <p class="trust-card__desc" data-i18n="trust.proactive.desc">Probleme erkennen, bevor sie zu teuren Ausfällen werden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 3 — SERVICES
+         ═══════════════════════════════════════════════ -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow" data-i18n="nav.services">Leistungen</span>
+          <h2 data-i18n="services.title">IT-Unterstützung ohne Komplexität.</h2>
+          <p class="lead" data-i18n="services.subtitle">Praxisnahe IT-Dienstleistungen für kleine und wachsende Unternehmen.</p>
+        </div>
+
+        <div class="services-grid reveal-stagger">
+          <!-- S1: Managed IT Support -->
+          <div class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="card__title" data-i18n="services.s1.title">Managed IT-Support</h3>
+            <p class="card__desc" data-i18n="services.s1.desc">Proaktiver und reaktionsschneller IT-Support für Ihre Benutzer, Computer, Microsoft 365 und alltägliche IT-Probleme.</p>
+            <a href="services/managed-it-support.html" class="card__link" data-i18n="services.learn">Mehr erfahren <span>→</span></a>
+          </div>
+
+          <!-- S2: Network & Infrastructure -->
+          <div class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><rect x="1" y="1" width="9" height="9" rx="1"></rect><rect x="14" y="1" width="9" height="9" rx="1"></rect><rect x="1" y="14" width="9" height="9" rx="1"></rect><rect x="14" y="14" width="9" height="9" rx="1"></rect><line x1="10" y1="5.5" x2="14" y2="5.5"></line><line x1="5.5" y1="10" x2="5.5" y2="14"></line><line x1="18.5" y1="10" x2="18.5" y2="14"></line><line x1="10" y1="18.5" x2="14" y2="18.5"></line></svg>
+            </div>
+            <h3 class="card__title" data-i18n="services.s2.title">Netzwerk & Infrastruktur</h3>
+            <p class="card__desc" data-i18n="services.s2.desc">Planung, Konfiguration und Verwaltung von Firmennetzwerken, Firewalls, WLAN, Servern und Infrastruktur.</p>
+            <a href="services/network-infrastructure.html" class="card__link" data-i18n="services.learn">Mehr erfahren <span>→</span></a>
+          </div>
+
+          <!-- S3: Microsoft 365 & Cloud -->
+          <div class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"></path></svg>
+            </div>
+            <h3 class="card__title" data-i18n="services.s3.title">Microsoft 365 & Cloud</h3>
+            <p class="card__desc" data-i18n="services.s3.desc">Microsoft-365-Umgebungen konfigurieren, absichern und verwalten, damit Ihre Mitarbeiter von überall effizient arbeiten können.</p>
+            <a href="services/microsoft-365-cloud.html" class="card__link" data-i18n="services.learn">Mehr erfahren <span>→</span></a>
+          </div>
+
+          <!-- S4: Backup & Business Continuity -->
+          <div class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            </div>
+            <h3 class="card__title" data-i18n="services.s4.title">Backup & Business Continuity</h3>
+            <p class="card__desc" data-i18n="services.s4.desc">Zuverlässiges Backup, Monitoring und Wiederherstellung zum Schutz Ihres Unternehmens vor IT-Ausfällen.</p>
+            <a href="services/backup-business-continuity.html" class="card__link" data-i18n="services.learn">Mehr erfahren <span>→</span></a>
+          </div>
+
+          <!-- S5: IT Health Checks -->
+          <div class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+            </div>
+            <h3 class="card__title" data-i18n="services.s5.title">IT-Checks & Beratung</h3>
+            <p class="card__desc" data-i18n="services.s5.desc">Eine praxisnahe Überprüfung Ihrer IT-Umgebung, um Lücken, Risiken und Verbesserungspotenziale zu erkennen.</p>
+            <a href="services/it-health-checks.html" class="card__link" data-i18n="services.learn">Mehr erfahren <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 4 — PROBLEM / SOLUTION
+         ═══════════════════════════════════════════════ -->
+    <section class="section problems-section" id="problems">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 data-i18n="problems.title">Ihr Unternehmen wächst. Hält Ihre IT Schritt?</h2>
+        </div>
+
+        <div class="problem-grid reveal-stagger">
+          <div class="problem-quote reveal" data-i18n="problems.q1">„Unser Netzwerk ist unzuverlässig."</div>
+          <div class="problem-quote reveal" data-i18n="problems.q2">„Niemand weiß, wie unsere IT konfiguriert ist."</div>
+          <div class="problem-quote reveal" data-i18n="problems.q3">„Wir machen uns Sorgen um unsere Backups."</div>
+          <div class="problem-quote reveal" data-i18n="problems.q4">„Microsoft 365 ist schwer zu verwalten geworden."</div>
+          <div class="problem-quote reveal" data-i18n="problems.q5">„Wir haben keine interne IT-Fachkraft."</div>
+          <div class="problem-quote reveal" data-i18n="problems.q6">„Wir wissen, dass unsere Systeme veraltet sind, aber nicht, wo wir anfangen sollen."</div>
+        </div>
+
+        <div class="reveal" style="text-align:center; margin-top:var(--spacing-48)">
+          <p class="lead" style="margin:0 auto var(--spacing-16); max-width:100%" data-i18n="problems.solution">
+            BitCheck verwandelt IT-Probleme in einen klaren Plan.
+          </p>
+          <div class="solution-flow">
+            <span class="solution-step" data-i18n="problems.step1">Analysieren</span>
+            <span class="solution-arrow">→</span>
+            <span class="solution-step" data-i18n="problems.step2">Verbessern</span>
+            <span class="solution-arrow">→</span>
+            <span class="solution-step" data-i18n="problems.step3">Verwalten</span>
+            <span class="solution-arrow">→</span>
+            <span class="solution-step" data-i18n="problems.step4">Optimieren</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 5 — HOW IT WORKS / PROCESS
+         ═══════════════════════════════════════════════ -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">Process</span>
+          <h2 data-i18n="process.title">Wie wir mit Ihnen arbeiten.</h2>
+        </div>
+
+        <div class="process reveal">
+          <div class="process__step">
+            <div class="process__number">01</div>
+            <h3 class="process__title" data-i18n="process.s1.title">Verstehen</h3>
+            <p class="process__desc" data-i18n="process.s1.desc">Wir lernen Ihr Unternehmen, Ihre aktuelle Infrastruktur und Ihre Prioritäten kennen.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__number">02</div>
+            <h3 class="process__title" data-i18n="process.s2.title">Analysieren</h3>
+            <p class="process__desc" data-i18n="process.s2.desc">Wir identifizieren technische, sicherheits- und zuverlässigkeitsrelevante Risiken.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__number">03</div>
+            <h3 class="process__title" data-i18n="process.s3.title">Verbessern</h3>
+            <p class="process__desc" data-i18n="process.s3.desc">Wir setzen praxisnahe Verbesserungen kontrolliert und dokumentiert um.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__number">04</div>
+            <h3 class="process__title" data-i18n="process.s4.title">Betreuen</h3>
+            <p class="process__desc" data-i18n="process.s4.desc">Wir überwachen, warten und betreuen Ihre Umgebung fortlaufend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 6 — SECURITY
+         ═══════════════════════════════════════════════ -->
+    <section class="section security-section" id="security">
+      <div class="container">
+        <div class="security-content">
+          <div class="security-text reveal">
+            <span class="eyebrow">Security</span>
+            <h2 data-i18n="security.title">Sicherheit sollte eingebaut sein — nicht nachträglich ergänzt.</h2>
+            <p data-i18n="security.desc">Gute Sicherheit beginnt mit den Grundlagen. Wir helfen kleinen Unternehmen, Kontosicherheit, Zugriffskontrollen, Patching, Backups, Fernzugriff und Infrastrukturhygiene ohne unnötige Komplexität zu verbessern.</p>
+          </div>
+
+          <div class="feature-list reveal">
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.mfa">Multi-Faktor-Authentifizierung</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.privilege">Minimale Berechtigungen</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.backup">Geprüfte Backups</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.patching">Patch-Management</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.remote">Sicherer Fernzugriff</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.monitoring">Infrastruktur-Monitoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <span data-i18n="security.docs">Sicherheitsdokumentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 7 — WHY BitCheck
+         ═══════════════════════════════════════════════ -->
+    <section class="section why-section" id="why">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 data-i18n="why.title">Ein anderer IT-Partner.</h2>
+        </div>
+
+        <div class="why-grid reveal-stagger">
+          <div class="why-card reveal">
+            <div class="why-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
+            </div>
+            <h3 class="why-card__title" data-i18n="why.w1.title">Fokus auf kleine Unternehmen</h3>
+            <p class="why-card__desc" data-i18n="why.w1.desc">Lösungen, die auf Ihre Unternehmensgröße zugeschnitten sind.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="why-card__title" data-i18n="why.w2.title">Technische Tiefe</h3>
+            <p class="why-card__desc" data-i18n="why.w2.desc">Netzwerk-, System-, Cloud-, Automatisierungs- und Infrastrukturwissen.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="why-card__title" data-i18n="why.w3.title">Sicherheitsbewusst</h3>
+            <p class="why-card__desc" data-i18n="why.w3.desc">Sicherheitsüberlegungen in jede alltägliche Technologieentscheidung integriert.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </div>
+            <h3 class="why-card__title" data-i18n="why.w4.title">Klar & Transparent</h3>
+            <p class="why-card__desc" data-i18n="why.w4.desc">Kein unnötiges Fachchinesisch. Keine Unklarheit darüber, was wir tun.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+            </div>
+            <h3 class="why-card__title" data-i18n="why.w5.title">Langfristige Partnerschaft</h3>
+            <p class="why-card__desc" data-i18n="why.w5.desc">Von Einzellösungen zu proaktivem, laufendem IT-Management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 8 — CREDIBILITY / PRINCIPLES
+         ═══════════════════════════════════════════════ -->
+    <section class="section credibility-section" id="credibility">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">Foundation</span>
+          <h2 data-i18n="credibility.title">Worauf wir aufbauen.</h2>
+        </div>
+
+        <div class="principles-grid reveal-stagger">
+          <div class="principle-item reveal">
+            <span class="principle-item__check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span data-i18n="credibility.p1">Security-First-Praktiken</span>
+          </div>
+          <div class="principle-item reveal">
+            <span class="principle-item__check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span data-i18n="credibility.p2">Dokumentierte Infrastruktur</span>
+          </div>
+          <div class="principle-item reveal">
+            <span class="principle-item__check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span data-i18n="credibility.p3">Moderne Werkzeuge</span>
+          </div>
+          <div class="principle-item reveal">
+            <span class="principle-item__check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span data-i18n="credibility.p4">Automatisierung</span>
+          </div>
+          <div class="principle-item reveal">
+            <span class="principle-item__check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span data-i18n="credibility.p5">Transparente Kommunikation</span>
+          </div>
+          <div class="principle-item reveal">
+            <span class="principle-item__check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span data-i18n="credibility.p6">Professionelle Betriebsprozesse</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 9 — FINAL CTA
+         ═══════════════════════════════════════════════ -->
+    <section class="section final-cta-section" id="contact-cta">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 data-i18n="cta.title">Nicht sicher, wo Sie anfangen sollen?</h2>
+          <p data-i18n="cta.desc">Lassen Sie uns einen Blick auf Ihre aktuelle IT-Umgebung werfen und die wichtigsten Verbesserungen identifizieren.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn--primary btn--lg" data-i18n="cta.primary">IT-Check buchen <span class="btn__arrow">→</span></a>
+            <a href="contact.html" class="btn btn--secondary btn--lg" data-i18n="cta.secondary">Sprechen Sie mit uns</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <span class="navbar__logo-img" aria-hidden="true"></span>
+            BitCheck
+          </a>
+          <p class="footer__tagline">Reliable IT. Secure Business.</p>
+          <p data-i18n="footer.desc">Professionelle IT-Dienstleistungen für kleine und wachsende Unternehmen in Bayern. Wir helfen Ihnen, die Technologie aufzubauen, zu verwalten und abzusichern, auf die Ihr Unternehmen angewiesen ist.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.services">Leistungen</h4>
+          <a href="services/managed-it-support.html" class="footer__link" data-i18n="services.s1.title">Managed IT-Support</a>
+          <a href="services/network-infrastructure.html" class="footer__link" data-i18n="services.s2.title">Netzwerk & Infrastruktur</a>
+          <a href="services/microsoft-365-cloud.html" class="footer__link" data-i18n="services.s3.title">Microsoft 365 & Cloud</a>
+          <a href="services/backup-business-continuity.html" class="footer__link" data-i18n="services.s4.title">Backup & Business Continuity</a>
+          <a href="services/it-health-checks.html" class="footer__link" data-i18n="services.s5.title">IT-Checks & Beratung</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.company">Unternehmen</h4>
+          <a href="about.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+          <a href="insights.html" class="footer__link" data-i18n="nav.insights">Insights</a>
+          <a href="contact.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+          <a href="impressum.html" class="footer__link" data-i18n="footer.impressum">Impressum</a>
+          <a href="datenschutz.html" class="footer__link" data-i18n="footer.datenschutz">Datenschutz</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.contact">Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>info@bit-check.de</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+            <span>[PHONE]</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-i18n="footer.area">Servicegebiet: Bayern — München, Landshut & Umgebung</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2025 BitCheck. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></span>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hero-network.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+</body>
+</html>
