@@ -1,5 +1,5 @@
 /* ============================================================
-   ITWURZEL — Section Styles (Mintlify Light)
+   BitCheck — Section Styles (Mintlify Light)
    Alternating white / mist-gray backgrounds.
    ============================================================ */
 
@@ -14,8 +14,17 @@
   gap: var(--spacing-16);
 }
 
-@media (max-width: 900px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .trust-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* ── Services ── mist gray */
@@ -29,8 +38,17 @@
   gap: var(--spacing-16);
 }
 
-@media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* ── Problems ── white */
@@ -45,8 +63,17 @@
   margin-bottom: var(--spacing-48);
 }
 
-@media (max-width: 900px) { .problem-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .problem-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* ── Process ── mist gray */
@@ -86,7 +113,10 @@
 }
 
 @media (max-width: 768px) {
-  .security-content { grid-template-columns: 1fr; gap: var(--spacing-32); }
+  .security-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-32);
+  }
 }
 
 
@@ -102,10 +132,20 @@
 }
 
 @media (max-width: 900px) {
-  .why-grid { grid-template-columns: repeat(2, 1fr); }
-  .why-grid .why-card:nth-child(5) { grid-column: auto; }
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid .why-card:nth-child(5) {
+    grid-column: auto;
+  }
 }
-@media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* ── Credibility ── mist gray */
@@ -120,7 +160,11 @@
   max-width: 700px;
 }
 
-@media (max-width: 600px) { .principles-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* ── Final CTA ── white */

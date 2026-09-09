@@ -1,5 +1,5 @@
 /* ============================================================
-   ITWURZEL — Smooth Scroll
+   BitCheck — Smooth Scroll
    Handles anchor link smooth scrolling with navbar offset.
    ============================================================ */
 

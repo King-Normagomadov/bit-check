@@ -1,5 +1,5 @@
 /* ============================================================
-   ITWURZEL — Main JS
+   BitCheck — Main JS
    Navigation, scroll effects, reveal animations.
    ============================================================ */
 
@@ -83,7 +83,7 @@ function initNavbar() {
     const pagePath = currentPath.replace(/index\.html$/, '');
 
     if (linkPath === pagePath ||
-        (linkPath !== '/' && pagePath.startsWith(linkPath))) {
+      (linkPath !== '/' && pagePath.startsWith(linkPath))) {
       link.classList.add('is-active');
     }
   });

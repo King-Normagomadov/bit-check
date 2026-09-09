@@ -1,5 +1,5 @@
 /* ============================================================
-   ITWURZEL — Hero Network Visualization
+   BitCheck — Hero Network Visualization
    Subtle white grid of connected nodes on teal hero.
    Geometric, clean, minimal — abstract infrastructure.
    ============================================================ */
@@ -10,16 +10,16 @@
   const CANVAS_ID = 'hero-network-canvas';
 
   const CONFIG = {
-    nodeCount:       60,
-    connectionDist:  180,
-    nodeSpeed:       0.3,
-    nodeMinSize:     1.5,
-    nodeMaxSize:     2.5,
-    lineWidth:       0.5,
-    nodeColor:       'rgba(255, 255, 255, 0.5)',
-    lineColor:       'rgba(255, 255, 255, 0.08)',
-    nodeHighlight:   'rgba(255, 255, 255, 0.8)',
-    mouseRadius:     200,
+    nodeCount: 60,
+    connectionDist: 180,
+    nodeSpeed: 0.3,
+    nodeMinSize: 1.5,
+    nodeMaxSize: 2.5,
+    lineWidth: 0.5,
+    nodeColor: 'rgba(255, 255, 255, 0.5)',
+    lineColor: 'rgba(255, 255, 255, 0.08)',
+    nodeHighlight: 'rgba(255, 255, 255, 0.8)',
+    mouseRadius: 200,
   };
 
   let canvas, ctx;

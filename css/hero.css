@@ -1,5 +1,5 @@
 /* ============================================================
-   ITWURZEL — Hero Section (Mintlify Light)
+   BitCheck — Hero Section (Mintlify Light)
    Full-bleed dark teal hero — the only colorful surface.
    ============================================================ */
 
@@ -11,7 +11,8 @@
   justify-content: center;
   overflow: hidden;
   background: linear-gradient(135deg, #064e3b 0%, #0c8c5e 50%, #059669 100%);
-  padding-top: 64px; /* navbar height */
+  padding-top: 64px;
+  /* navbar height */
 }
 
 /* Network canvas */
@@ -101,7 +102,8 @@
 
 /* Scroll indicator */
 .hero__scroll {
-  display: none; /* Clean, no scroll indicator in Mintlify style */
+  display: none;
+  /* Clean, no scroll indicator in Mintlify style */
 }
 
 /* Remove old grid pattern */
