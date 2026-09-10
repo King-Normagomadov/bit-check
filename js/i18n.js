@@ -20,10 +20,10 @@ const translations = {
   'nav.cta': { en: 'Book an IT Health Check', de: 'IT-Check buchen' },
 
   // ── HERO ──
-  'hero.eyebrow': { en: 'IT SERVICES FOR SMALL BUSINESSES', de: 'IT-DIENSTLEISTUNGEN FÜR KLEINE UNTERNEHMEN' },
-  'hero.title.1': { en: 'Reliable IT.', de: 'Zuverlässige IT.' },
-  'hero.title.2': { en: 'Secure Business.', de: 'Sicheres Unternehmen.' },
-  'hero.subtitle': { en: 'ITWURZEL helps small and growing businesses build, manage and improve the technology infrastructure they depend on every day.', de: 'ITWURZEL unterstützt kleine und wachsende Unternehmen beim Aufbau, der Verwaltung und der Verbesserung der Technologie-Infrastruktur, auf die sie täglich angewiesen sind.' },
+  'hero.eyebrow': { en: 'IT SERVICES FOR SMALL BUSINESSES', de: 'IT-DIENSTLEISTUNGEN FÜR KLEINE UNTERNEHMEN IN LANDSHUT' },
+  'hero.title.1': { en: 'Reliable IT.', de: 'IT-Dienstleister für kleine' },
+  'hero.title.2': { en: 'Secure Business.', de: 'Unternehmen in Landshut.' },
+  'hero.subtitle': { en: 'BitCheck helps small and growing businesses build, manage and improve the technology infrastructure they depend on every day.', de: 'BitCheck unterstützt kleine und wachsende Unternehmen beim Aufbau, der Verwaltung und der Verbesserung der Technologie-Infrastruktur, auf die sie täglich angewiesen sind.' },
   'hero.subtitle2': { en: 'From networks and Microsoft 365 to backups, monitoring and ongoing IT support — we keep your technology reliable, secure and manageable.', de: 'Von Netzwerken über Microsoft 365 bis hin zu Backups, Monitoring und laufendem IT-Support — wir halten Ihre Technologie zuverlässig, sicher und verwaltbar.' },
   'hero.cta.primary': { en: 'Book an IT Health Check', de: 'IT-Check buchen' },
   'hero.cta.secondary': { en: 'Explore Our Services', de: 'Unsere Leistungen entdecken' },
@@ -70,7 +70,7 @@ const translations = {
   'problems.q4': { en: '"Microsoft 365 has become difficult to manage."', de: '„Microsoft 365 ist schwer zu verwalten geworden."' },
   'problems.q5': { en: '"We don\'t have an internal IT person."', de: '„Wir haben keine interne IT-Fachkraft."' },
   'problems.q6': { en: '"We know our systems are outdated, but don\'t know where to start."', de: '„Wir wissen, dass unsere Systeme veraltet sind, aber nicht, wo wir anfangen sollen."' },
-  'problems.solution': { en: 'ITWURZEL turns technology problems into a clear plan.', de: 'ITWURZEL verwandelt IT-Probleme in einen klaren Plan.' },
+  'problems.solution': { en: 'BitCheck turns technology problems into a clear plan.', de: 'BitCheck verwandelt IT-Probleme in einen klaren Plan.' },
 
   'problems.step1': { en: 'Assess', de: 'Analysieren' },
   'problems.step2': { en: 'Improve', de: 'Verbessern' },
@@ -128,26 +128,26 @@ const translations = {
   'cta.secondary': { en: 'Talk to Us', de: 'Sprechen Sie mit uns' },
 
   // ── FOOTER ──
-  'footer.desc': { en: 'Professional IT services for small and growing businesses in Bavaria. We help you build, manage and secure the technology your business depends on.', de: 'Professionelle IT-Dienstleistungen für kleine und wachsende Unternehmen in Bayern. Wir helfen Ihnen, die Technologie aufzubauen, zu verwalten und abzusichern, auf die Ihr Unternehmen angewiesen ist.' },
+  'footer.desc': { en: 'Professional IT services for small and growing businesses in Landshut. We help you build, manage and secure the technology your business depends on.', de: 'Professionelle IT-Dienstleistungen für kleine und wachsende Unternehmen in Landshut und Umgebung. Wir helfen Ihnen, die Technologie aufzubauen, zu verwalten und abzusichern, auf die Ihr Unternehmen angewiesen ist.' },
   'footer.services': { en: 'Services', de: 'Leistungen' },
   'footer.company': { en: 'Company', de: 'Unternehmen' },
   'footer.contact': { en: 'Contact', de: 'Kontakt' },
   'footer.impressum': { en: 'Impressum', de: 'Impressum' },
   'footer.datenschutz': { en: 'Privacy Policy', de: 'Datenschutz' },
   'footer.rights': { en: 'All rights reserved.', de: 'Alle Rechte vorbehalten.' },
-  'footer.area': { en: 'Service Area: Bavaria — Munich, Landshut & surroundings', de: 'Servicegebiet: Bayern — München, Landshut & Umgebung' },
+  'footer.area': { en: 'Service Area: Landshut & surroundings', de: 'Servicegebiet: Landshut & Umgebung' },
 
   // ── SERVICES PAGE ──
   'sp.title': { en: 'Our Services', de: 'Unsere Leistungen' },
   'sp.subtitle': { en: 'Practical IT services designed for small and growing businesses.', de: 'Praxisnahe IT-Dienstleistungen für kleine und wachsende Unternehmen.' },
 
   // ── ABOUT PAGE ──
-  'about.title': { en: 'About ITWURZEL', de: 'Über ITWURZEL' },
+  'about.title': { en: 'About BitCheck', de: 'Über BitCheck' },
   'about.subtitle': { en: 'A modern IT services company built on technical depth, security awareness and transparent communication.', de: 'Ein modernes IT-Dienstleistungsunternehmen, aufgebaut auf technischer Tiefe, Sicherheitsbewusstsein und transparenter Kommunikation.' },
   'about.story.title': { en: 'Our Story', de: 'Unsere Geschichte' },
-  'about.story.p1': { en: 'ITWURZEL was founded by Computer Science professionals with a focus on infrastructure, networking, systems administration, cybersecurity and automation.', de: 'ITWURZEL wurde von Informatik-Fachleuten mit Schwerpunkt Infrastruktur, Netzwerke, Systemadministration, Cybersicherheit und Automatisierung gegründet.' },
+  'about.story.p1': { en: 'BitCheck was founded by Computer Science professionals with a focus on infrastructure, networking, systems administration, cybersecurity and automation.', de: 'BitCheck wurde von Informatik-Fachleuten mit Schwerpunkt Infrastruktur, Netzwerke, Systemadministration, Cybersicherheit und Automatisierung gegründet.' },
   'about.story.p2': { en: 'We believe small businesses deserve the same level of technical discipline and security awareness as larger organizations — without the complexity or cost of maintaining a large internal IT department.', de: 'Wir glauben, dass kleine Unternehmen dasselbe Maß an technischer Disziplin und Sicherheitsbewusstsein verdienen wie größere Organisationen — ohne die Komplexität oder die Kosten einer großen internen IT-Abteilung.' },
-  'about.why.title': { en: 'Why ITWURZEL?', de: 'Warum ITWURZEL?' },
+  'about.why.title': { en: 'Why BitCheck?', de: 'Warum BitCheck?' },
   'about.h1.title': { en: 'Infrastructure Knowledge', de: 'Infrastruktur-Know-how' },
   'about.h1.desc': { en: 'Deep understanding of networks, servers, cloud and security.', de: 'Tiefes Verständnis von Netzwerken, Servern, Cloud und Sicherheit.' },
   'about.h2.title': { en: 'Documentation Culture', de: 'Dokumentationskultur' },
