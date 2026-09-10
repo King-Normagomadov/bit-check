@@ -1,14 +1,16 @@
-import { Resend } from 'resend';
+const { Resend } = require('resend');
 
 // Vercel Serverless Function to handle contact form submissions via Resend
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // CORS Configuration
   const allowedOrigins = [
     'https://www.bit-check.de',
     'https://bit-check.de',
     // We can allow localhost for local development testing if needed
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:5500',
+    'http://localhost:5500'
   ];
 
   const origin = req.headers.origin;
