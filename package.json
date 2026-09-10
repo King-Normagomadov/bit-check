@@ -1,8 +1,0 @@
-{
-  "name": "bit-check-api",
-  "version": "1.0.0",
-  "description": "Vercel API for Bit-Check Website",
-  "dependencies": {
-    "resend": "^3.0.0"
-  }
-}

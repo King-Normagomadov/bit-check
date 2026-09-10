@@ -170,7 +170,7 @@ function initContactForm() {
     try {
       // NOTE: Replace this URL with your actual Vercel API deployment URL
       // since the frontend is on GitHub Pages and backend is on Vercel.
-      const API_URL = 'https://bitcheck-omega.vercel.app/api/contact';
+      const API_URL = 'https://bit-check-email-handler.vercel.app/api/contact';
 
       const response = await fetch(API_URL, {
         method: 'POST',
