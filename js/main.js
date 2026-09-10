@@ -181,7 +181,9 @@ function initContactForm() {
       if (response.ok) {
         window.location.href = 'danke.html';
       } else {
-        throw new Error('Server error');
+        const errData = await response.json();
+        console.error('Backend Error Details:', errData);
+        throw new Error(errData.error || 'Server error');
       }
     } catch (err) {
       console.error(err);
