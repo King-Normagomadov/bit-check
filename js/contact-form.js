@@ -1,5 +1,5 @@
 /* ============================================================
-   ITWURZEL — Contact Form Validation & UX
+   BitCheck — Contact Form Validation & UX
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
