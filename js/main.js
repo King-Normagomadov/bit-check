@@ -149,7 +149,7 @@ function initContactForm() {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     // Check honeypot
     const formData = new FormData(form);
     if (formData.get('_gotcha')) {
@@ -160,7 +160,7 @@ function initContactForm() {
 
     // Convert FormData to JSON
     const data = Object.fromEntries(formData.entries());
-    
+
     // Update button state
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.innerHTML = 'Wird gesendet...';
@@ -170,8 +170,8 @@ function initContactForm() {
     try {
       // NOTE: Replace this URL with your actual Vercel API deployment URL
       // since the frontend is on GitHub Pages and backend is on Vercel.
-      const API_URL = 'https://bit-check-api.vercel.app/api/contact';
-      
+      const API_URL = 'https://bitcheck-omega.vercel.app/api/contact';
+
       const response = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -189,7 +189,7 @@ function initContactForm() {
       messageBox.style.backgroundColor = '#fee2e2';
       messageBox.style.color = '#991b1b';
       messageBox.textContent = 'Es gab ein Problem beim Senden. Bitte versuchen Sie es später erneut oder rufen Sie uns an.';
-      
+
       // Reset button
       submitBtn.innerHTML = originalBtnText;
       submitBtn.disabled = false;
