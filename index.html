@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- CSS -->
@@ -51,8 +51,33 @@
     "name": "BitCheck",
     "description": "BitCheck ist Ihr IT Dienstleister in Landshut. Managed IT, Netzwerk, Microsoft 365, Backup und IT-Beratung für kleine und mittelständische Unternehmen.",
     "url": "https://www.bitcheck.de",
+    "telephone": "+49 155 63670570",
+    "email": "info@bit-check.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Niedermayer-Straße 28",
+      "addressLocality": "Landshut",
+      "postalCode": "84032",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
     "areaServed": [
-      { "@type": "City", "name": "Landshut" }
+      { "@type": "City", "name": "Landshut" },
+      { "@type": "City", "name": "Plattling" },
+      { "@type": "City", "name": "Dingolfing" },
+      { "@type": "City", "name": "Passau" },
+      { "@type": "City", "name": "Straubing" },
+      { "@type": "City", "name": "Ingolstadt" },
+      { "@type": "City", "name": "München" },
+      { "@type": "City", "name": "Regensburg" },
+      { "@type": "City", "name": "Rosenheim" },
+      { "@type": "City", "name": "Freising" },
+      { "@type": "City", "name": "Deggendorf" }
     ],
     "serviceType": ["Managed IT Services", "IT Support", "Network Infrastructure", "Microsoft 365 Administration", "Backup & Business Continuity", "IT Consulting"],
     "knowsLanguage": ["de", "en"],
@@ -589,7 +614,35 @@
 
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 9 — FINAL CTA
+         SECTION 9 — SERVICE AREA
+         ═══════════════════════════════════════════════ -->
+    <section class="section service-area-section" id="service-area">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">Standort</span>
+          <h2>IT-Dienstleistungen in Landshut und Umgebung</h2>
+          <p class="lead">Als IT-Dienstleister mit Sitz in Landshut betreuen wir kleine und mittelständische Unternehmen in der gesamten Region.</p>
+        </div>
+        <div class="service-area-grid reveal">
+          <span class="service-area-tag service-area-tag--primary">Landshut</span>
+          <span class="service-area-tag">Plattling</span>
+          <span class="service-area-tag">Dingolfing</span>
+          <span class="service-area-tag">Passau</span>
+          <span class="service-area-tag">Straubing</span>
+          <span class="service-area-tag">Ingolstadt</span>
+          <span class="service-area-tag">München</span>
+          <span class="service-area-tag">Regensburg</span>
+          <span class="service-area-tag">Rosenheim</span>
+          <span class="service-area-tag">Freising</span>
+          <span class="service-area-tag">Deggendorf</span>
+        </div>
+        <p class="reveal" style="margin-top:var(--spacing-24); opacity:0.65">Erfahren Sie mehr über unsere <a href="it-dienstleister-landshut/index.html" style="color:var(--color-mint-green); text-decoration:underline">IT-Dienstleistungen in Landshut</a>.</p>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 10 — FINAL CTA
          ═══════════════════════════════════════════════ -->
     <section class="section final-cta-section" id="contact-cta">
       <div class="container">
@@ -664,7 +717,7 @@
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z">
               </path>
             </svg>
-            <span>[PHONE]</span>
+            <span><a href="tel:+4915563670570" style="color:inherit">+49 155 63670570</a></span>
           </div>
           <div class="footer__contact-item">
             <svg viewBox="0 0 24 24">

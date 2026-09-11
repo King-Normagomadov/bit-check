@@ -6,51 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Managed IT für Unternehmen in Landshut | BitCheck</title>
   <meta name="description"
-    content="Proaktive IT-Betreuung und Managed IT Support für Unternehmen in Landshut. Externer IT-Dienstleister für Ihre Systeme.">
+    content="Proaktive IT-Betreuung und Managed IT Support für Unternehmen in Landshut. BitCheck ist Ihr externer IT-Dienstleister für Systeme, Microsoft 365 und Infrastruktur.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.bitcheck.de/services/managed-it-support.html">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Managed IT für Unternehmen in Landshut | BitCheck">
   <meta property="og:description"
     content="Proaktive IT-Betreuung und Managed IT Support für Unternehmen in Landshut. Externer IT-Dienstleister für Ihre Systeme.">
+  <meta property="og:url" content="https://www.bitcheck.de/services/managed-it-support.html">
+  <meta property="og:locale" content="de_DE">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/sections.css">
   <link rel="stylesheet" href="../css/pages.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Managed IT Support",
+    "description": "Proaktive IT-Betreuung und laufender IT-Support für kleine und mittelständische Unternehmen in Landshut.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "BitCheck",
+      "url": "https://www.bitcheck.de",
+      "telephone": "+49 155 63670570",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Niedermayer-Straße 28",
+        "addressLocality": "Landshut",
+        "postalCode": "84032",
+        "addressCountry": "DE"
+      }
+    },
+    "areaServed": { "@type": "City", "name": "Landshut" },
+    "serviceType": "Managed IT Services"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.bitcheck.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Leistungen", "item": "https://www.bitcheck.de/services.html" },
+      { "@type": "ListItem", "position": 3, "name": "Managed IT Support", "item": "https://www.bitcheck.de/services/managed-it-support.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie schnell reagieren Sie auf Supportanfragen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Wir priorisieren Anfragen nach Dringlichkeit. Kritische Probleme werden so schnell wie möglich bearbeitet, in der Regel innerhalb weniger Stunden. Für nicht-kritische Anfragen innerhalb eines Werktags." }
+      },
+      {
+        "@type": "Question",
+        "name": "Arbeiten Sie vor Ort oder remote?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Die meisten Probleme können remote gelöst werden. Bei Bedarf kommen wir auch vor Ort — insbesondere bei Hardware-Themen, Netzwerkarbeiten oder größeren Projekten." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie funktioniert die Zusammenarbeit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Wir beginnen mit einer Bestandsaufnahme Ihrer IT-Umgebung. Auf dieser Basis erstellen wir einen Plan für regelmäßige Wartung, Support und eventuelle Verbesserungen." }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet Managed IT-Support?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Die Kosten hängen von der Größe Ihrer Umgebung und dem gewünschten Leistungsumfang ab. Kontaktieren Sie uns für ein individuelles Angebot." }
+      }
+    ]
+  }
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXWVKF9WDD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-ZXWVKF9WDD');
   </script>
-
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbar__inner"><a href="../index.html" class="navbar__logo"><span class="navbar__logo-img"
-          aria-hidden="true"></span> BitCheck</a>
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo" aria-label="BitCheck Home">
+        <span class="navbar__logo-img" aria-hidden="true"></span> BitCheck
+      </a>
       <div class="navbar__menu" id="nav-menu">
-        <div class="navbar__links"><a href="../index.html" class="navbar__link" data-i18n="nav.home">Startseite</a><a
-            href="../services.html" class="navbar__link is-active" data-i18n="nav.services">Leistungen</a><a
-            href="../about.html" class="navbar__link" data-i18n="nav.about">Über uns</a><a href="../insights.html"
-            class="navbar__link" data-i18n="nav.insights">Insights</a><a href="../contact.html" class="navbar__link"
-            data-i18n="nav.contact">Kontakt</a></div>
-        <div class="navbar__actions">
-          <div class="lang-toggle"><button class="lang-toggle__btn" data-lang="de">DE</button><button
-              class="lang-toggle__btn" data-lang="en">EN</button></div><a href="../contact.html"
-            class="btn btn--primary btn--sm navbar__cta" data-i18n="nav.cta">IT-Check buchen</a>
+        <div class="navbar__links">
+          <a href="../index.html" class="navbar__link" data-i18n="nav.home">Startseite</a>
+          <a href="../services.html" class="navbar__link is-active" data-i18n="nav.services">Leistungen</a>
+          <a href="../about.html" class="navbar__link" data-i18n="nav.about">Über uns</a>
+          <a href="../insights.html" class="navbar__link" data-i18n="nav.insights">Insights</a>
+          <a href="../contact.html" class="navbar__link" data-i18n="nav.contact">Kontakt</a>
         </div>
-      </div><button class="navbar__hamburger" id="nav-hamburger"
-        aria-label="Menu"><span></span><span></span><span></span></button>
+        <div class="navbar__actions">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button class="lang-toggle__btn" data-lang="de" type="button">DE</button>
+            <button class="lang-toggle__btn" data-lang="en" type="button">EN</button>
+          </div>
+          <a href="../contact.html" class="btn btn--primary btn--sm navbar__cta" data-i18n="nav.cta">IT-Check buchen</a>
+        </div>
+      </div>
+      <button class="navbar__hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
     <div class="navbar__overlay" id="nav-overlay"></div>
   </nav>
@@ -58,8 +131,15 @@
   <main>
     <section class="page-hero">
       <div class="container page-hero__content">
-        <span class="eyebrow">Service</span>
-        <h1 data-i18n="services.s1.title">Managed IT für Unternehmen in Landshut</h1>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Startseite</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../services.html">Leistungen</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Managed IT Support</span>
+        </nav>
+        <span class="eyebrow">IT-Betreuung für Unternehmen</span>
+        <h1>Managed IT für Unternehmen in Landshut</h1>
         <p class="lead">Zuverlässiger IT-Support für Ihr Unternehmen — damit Ihre Mitarbeiter produktiv bleiben und Ihre
           Systeme reibungslos laufen.</p>
       </div>
@@ -80,37 +160,47 @@
             Benutzerhilfe bis zur Systemwartung — wir kümmern uns um Ihre IT, damit Sie sich auf Ihr Geschäft
             konzentrieren können.</p>
           <div class="deliverables">
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Remote IT-Support</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Benutzeradministration</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Fehlerbehebung & Troubleshooting</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Microsoft 365 Administration</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Arbeitsplatz-Support</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Systemwartung</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Proaktive Überwachung</div>
-            <div class="deliverable-item"><svg viewBox="0 0 24 24">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>Laufendes IT-Management</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Remote IT-Support</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Benutzeradministration</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Fehlerbehebung &amp; Troubleshooting</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Microsoft 365 Administration</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Arbeitsplatz-Support</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Systemwartung</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Proaktive Überwachung</div>
+            <div class="deliverable-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Laufendes IT-Management</div>
+          </div>
+        </div>
+
+        <div class="service-block reveal">
+          <h2>Vorteile für Ihr Unternehmen</h2>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-card__icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+              <h3 class="benefit-card__title">Weniger Ausfallzeiten</h3>
+              <p class="benefit-card__desc">Proaktive Überwachung und Wartung erkennen Probleme, bevor sie Ihren Betrieb stören.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card__icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+              <h3 class="benefit-card__title">Höhere Sicherheit</h3>
+              <p class="benefit-card__desc">Sicherheitsgrundlagen wie MFA, Patching und Zugriffskontrollen werden konsequent umgesetzt.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card__icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></div>
+              <h3 class="benefit-card__title">Dokumentierte IT</h3>
+              <p class="benefit-card__desc">Sie wissen, was Sie haben, wie es konfiguriert ist und was Aufmerksamkeit braucht.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div>
+              <h3 class="benefit-card__title">Planbare IT-Kosten</h3>
+              <p class="benefit-card__desc">Regelmäßige Betreuung statt teurer Notfalleinsätze — Ihre IT-Ausgaben werden vorhersehbar.</p>
+            </div>
           </div>
         </div>
 
         <div class="service-block reveal">
           <h2>Für wen ist das?</h2>
           <p>Unternehmen mit 5–50 Mitarbeitern, die keine eigene IT-Abteilung haben und einen zuverlässigen, technisch
-            kompetenten Partner suchen, der sich um ihre IT-Infrastruktur kümmert.</p>
+            kompetenten Partner suchen, der sich um ihre IT-Infrastruktur kümmert. Besonders geeignet für <a href="../it-dienstleister-landshut/index.html" style="color:var(--color-mint-green)">Unternehmen in Landshut und Umgebung</a>, die einen lokalen Ansprechpartner bevorzugen.</p>
         </div>
 
         <div class="service-block reveal">
@@ -166,13 +256,51 @@
       </div>
     </section>
 
+    <!-- Related Services -->
+    <section class="section related-services">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow">Verwandte Leistungen</span>
+          <h2>Das könnte Sie auch interessieren</h2>
+        </div>
+        <div class="related-grid reveal-stagger">
+          <a href="microsoft-365-cloud.html" class="related-card reveal">
+            <div class="related-card__icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"></path></svg></div>
+            <span class="related-card__title">Microsoft 365 &amp; Cloud</span>
+            <span class="related-card__desc">Microsoft-365-Umgebungen professionell verwalten und absichern.</span>
+            <span class="related-card__link">Mehr erfahren <span>→</span></span>
+          </a>
+          <a href="network-infrastructure.html" class="related-card reveal">
+            <div class="related-card__icon"><svg viewBox="0 0 24 24"><rect x="1" y="1" width="9" height="9" rx="1"></rect><rect x="14" y="1" width="9" height="9" rx="1"></rect><rect x="1" y="14" width="9" height="9" rx="1"></rect><rect x="14" y="14" width="9" height="9" rx="1"></rect></svg></div>
+            <span class="related-card__title">Netzwerk &amp; Infrastruktur</span>
+            <span class="related-card__desc">Professionelle Planung und Betreuung Ihrer Netzwerkinfrastruktur.</span>
+            <span class="related-card__link">Mehr erfahren <span>→</span></span>
+          </a>
+          <a href="backup-business-continuity.html" class="related-card reveal">
+            <div class="related-card__icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg></div>
+            <span class="related-card__title">Backup &amp; Business Continuity</span>
+            <span class="related-card__desc">Zuverlässige Datensicherung und Wiederherstellung für Ihr Unternehmen.</span>
+            <span class="related-card__link">Mehr erfahren <span>→</span></span>
+          </a>
+          <a href="it-health-checks.html" class="related-card reveal">
+            <div class="related-card__icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg></div>
+            <span class="related-card__title">IT-Checks &amp; Beratung</span>
+            <span class="related-card__desc">Strukturierte Überprüfung Ihrer IT-Umgebung mit konkretem Maßnahmenplan.</span>
+            <span class="related-card__link">Mehr erfahren <span>→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section final-cta-section">
       <div class="container">
         <div class="cta-banner reveal">
           <h2 data-i18n="cta.title">Nicht sicher, wo Sie anfangen sollen?</h2>
           <p data-i18n="cta.desc">Lassen Sie uns einen Blick auf Ihre aktuelle IT-Umgebung werfen.</p>
-          <div class="cta-actions"><a href="../contact.html" class="btn btn--primary btn--lg"
-              data-i18n="cta.primary">IT-Check buchen <span class="btn__arrow">→</span></a></div>
+          <div class="cta-actions">
+            <a href="../contact.html" class="btn btn--primary btn--lg" data-i18n="cta.primary">IT-Check buchen <span class="btn__arrow">→</span></a>
+            <a href="../contact.html" class="btn btn--secondary btn--lg" data-i18n="cta.secondary">Sprechen Sie mit uns</a>
+          </div>
         </div>
       </div>
     </section>
@@ -181,48 +309,38 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-        <div class="footer__brand"><a href="../index.html" class="navbar__logo"><span class="navbar__logo-img"
-              aria-hidden="true"></span> BitCheck</a>
+        <div class="footer__brand">
+          <a href="../index.html" class="navbar__logo"><span class="navbar__logo-img" aria-hidden="true"></span> BitCheck</a>
           <p class="footer__tagline">IT-Dienstleistungen aus einer Hand</p>
-          <p data-i18n="footer.desc">Professionelle IT-Dienstleistungen für kleine und wachsende Unternehmen in Landshut
-            und Umgebung.</p>
+          <p data-i18n="footer.desc">Professionelle IT-Dienstleistungen für kleine und wachsende Unternehmen in Landshut und Umgebung.</p>
         </div>
         <div>
-          <h4 class="footer__heading" data-i18n="footer.services">Leistungen</h4><a href="managed-it-support.html"
-            class="footer__link" data-i18n="services.s1.title">Managed IT-Support</a><a
-            href="network-infrastructure.html" class="footer__link" data-i18n="services.s2.title">Netzwerk &
-            Infrastruktur</a><a href="microsoft-365-cloud.html" class="footer__link"
-            data-i18n="services.s3.title">Microsoft 365 & Cloud</a><a href="backup-business-continuity.html"
-            class="footer__link" data-i18n="services.s4.title">Backup & Business Continuity</a><a
-            href="it-health-checks.html" class="footer__link" data-i18n="services.s5.title">IT-Checks & Beratung</a>
+          <h4 class="footer__heading" data-i18n="footer.services">Leistungen</h4>
+          <a href="managed-it-support.html" class="footer__link" data-i18n="services.s1.title">Managed IT-Support</a>
+          <a href="network-infrastructure.html" class="footer__link" data-i18n="services.s2.title">Netzwerk &amp; Infrastruktur</a>
+          <a href="microsoft-365-cloud.html" class="footer__link" data-i18n="services.s3.title">Microsoft 365 &amp; Cloud</a>
+          <a href="backup-business-continuity.html" class="footer__link" data-i18n="services.s4.title">Backup &amp; Business Continuity</a>
+          <a href="it-health-checks.html" class="footer__link" data-i18n="services.s5.title">IT-Checks &amp; Beratung</a>
         </div>
         <div>
-          <h4 class="footer__heading" data-i18n="footer.company">Unternehmen</h4><a href="../about.html"
-            class="footer__link" data-i18n="nav.about">Über uns</a><a href="../it-dienstleister-landshut/index.html"
-            class="footer__link">IT-Dienstleister Landshut</a><a href="../insights.html" class="footer__link"
-            data-i18n="nav.insights">Insights</a><a href="../contact.html" class="footer__link"
-            data-i18n="nav.contact">Kontakt</a><a href="../impressum.html" class="footer__link">Impressum</a><a
-            href="../datenschutz.html" class="footer__link" data-i18n="footer.datenschutz">Datenschutz</a>
+          <h4 class="footer__heading" data-i18n="footer.company">Unternehmen</h4>
+          <a href="../about.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+          <a href="../it-dienstleister-landshut/index.html" class="footer__link">IT-Dienstleister Landshut</a>
+          <a href="../insights.html" class="footer__link" data-i18n="nav.insights">Insights</a>
+          <a href="../contact.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+          <a href="../impressum.html" class="footer__link">Impressum</a>
+          <a href="../datenschutz.html" class="footer__link" data-i18n="footer.datenschutz">Datenschutz</a>
         </div>
         <div>
           <h4 class="footer__heading" data-i18n="footer.contact">Kontakt</h4>
-          <div class="footer__contact-item"><svg viewBox="0 0 24 24">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg><span>info@bit-check.de</span></div>
-          <div class="footer__contact-item"><svg viewBox="0 0 24 24">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg><span data-i18n="footer.area">Servicegebiet: Landshut & Umgebung</span></div>
+          <div class="footer__contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><span>info@bit-check.de</span></div>
+          <div class="footer__contact-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg><span><a href="tel:+4915563670570" style="color:inherit">+49 155 63670570</a></span></div>
+          <div class="footer__contact-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span data-i18n="footer.area">Servicegebiet: Landshut &amp; Umgebung</span></div>
         </div>
       </div>
-      <div class="footer__bottom"><span>© 2026 BitCheck.</span>
-        <div class="footer__social"><a href="#" class="footer__social-link" aria-label="LinkedIn"><svg
-              viewBox="0 0 24 24">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg></a></div>
+      <div class="footer__bottom">
+        <span>© 2026 BitCheck. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></span>
+        <div class="footer__social"><a href="#" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></div>
       </div>
     </div>
   </footer>

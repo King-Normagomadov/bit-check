@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /design/
+Disallow: /seo/
+Disallow: /.git/
+
+Sitemap: https://www.bitcheck.de/sitemap.xml
