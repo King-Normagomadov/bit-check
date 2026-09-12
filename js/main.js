@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initFaqAccordion();
   initContactForm();
+  initCookieConsent();
 });
 
 /* ── Navbar ── */
@@ -197,4 +198,84 @@ function initContactForm() {
       submitBtn.disabled = false;
     }
   });
+}
+
+/* ── Cookie Consent Banner ── */
+function initCookieConsent() {
+  const GA_ID = 'G-ZXWVKF9WDD';
+  const consentState = localStorage.getItem('bitcheck_cookie_consent');
+
+  if (consentState === 'accepted') {
+    loadGA();
+  } else if (!consentState) {
+    showBanner();
+  }
+
+  function loadGA() {
+    if (document.getElementById('ga-script')) return;
+    
+    // GTAG JS
+    const script = document.createElement('script');
+    script.id = 'ga-script';
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    document.head.appendChild(script);
+
+    // GTAG Init
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag; // Make it globally available
+    gtag('js', new Date());
+    gtag('config', GA_ID, { 'anonymize_ip': true });
+  }
+
+  function showBanner() {
+    const banner = document.createElement('div');
+    banner.id = 'cookie-consent-banner';
+    // Using inline styles matching the design system
+    banner.innerHTML = `
+      <div style="position:fixed; bottom:0; left:0; right:0; background:var(--color-paper-white); padding:var(--spacing-16); box-shadow:0 -4px 24px rgba(0,0,0,0.08); z-index:9999; border-top:1px solid var(--color-cloud-gray);">
+        <div style="max-width:var(--page-max-width); margin:0 auto; display:flex; flex-direction:column; gap:var(--spacing-16); align-items:center; text-align:center;">
+          <div>
+            <p style="margin:0; font-size:14px; color:var(--color-true-black); line-height:1.5;">Wir nutzen Cookies, um unsere Website für Sie optimal zu gestalten und fortlaufend zu verbessern. Neben essenziellen Cookies verwenden wir auch Google Analytics zur statistischen Auswertung. <a href="datenschutz.html" style="color:var(--color-mint-green); text-decoration:underline;">Weitere Informationen</a></p>
+          </div>
+          <div style="display:flex; gap:var(--spacing-12); flex-wrap:wrap; justify-content:center;">
+            <button id="cookie-accept" class="btn btn--primary btn--sm" style="cursor:pointer;">Alle akzeptieren</button>
+            <button id="cookie-decline" class="btn btn--secondary btn--sm" style="cursor:pointer; background:transparent; border:1px solid var(--color-ink-black); color:var(--color-ink-black);">Nur essenzielle</button>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    document.body.appendChild(banner);
+
+    // Some simple media queries via JS to make it flex-row on desktop
+    const innerContainer = banner.querySelector('div > div');
+    const updateLayout = () => {
+      if (window.innerWidth > 768) {
+        innerContainer.style.flexDirection = 'row';
+        innerContainer.style.textAlign = 'left';
+        innerContainer.style.justifyContent = 'space-between';
+      } else {
+        innerContainer.style.flexDirection = 'column';
+        innerContainer.style.textAlign = 'center';
+        innerContainer.style.justifyContent = 'center';
+      }
+    };
+    updateLayout();
+    window.addEventListener('resize', updateLayout);
+
+    document.getElementById('cookie-accept').addEventListener('click', () => {
+      localStorage.setItem('bitcheck_cookie_consent', 'accepted');
+      loadGA();
+      banner.remove();
+      window.removeEventListener('resize', updateLayout);
+    });
+
+    document.getElementById('cookie-decline').addEventListener('click', () => {
+      localStorage.setItem('bitcheck_cookie_consent', 'declined');
+      banner.remove();
+      window.removeEventListener('resize', updateLayout);
+    });
+  }
 }

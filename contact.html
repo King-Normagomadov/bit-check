@@ -16,24 +16,14 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/pages.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXWVKF9WDD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-ZXWVKF9WDD');
-  </script>
 
 </head>
 
@@ -153,6 +143,12 @@
                   style="width:100%;padding:var(--spacing-10) var(--spacing-12);border:1px solid var(--color-cloud-gray);border-radius:var(--radius-inputs);font-size:14px;background:var(--color-paper-white);resize:vertical;transition:border-color 0.2s"
                   data-i18n-placeholder="contact.message.placeholder"
                   placeholder="Erzählen Sie uns kurz von Ihrer Situation..."></textarea>
+              </div>
+              <div style="margin-bottom:var(--spacing-24); display:flex; align-items:flex-start; gap:var(--spacing-8);">
+                <input type="checkbox" id="privacy-consent" name="privacy-consent" required style="margin-top: 4px; accent-color: var(--color-mint-green);">
+                <label for="privacy-consent" style="font-size:12px; color:var(--color-true-black); line-height:1.5;">
+                  Ich habe die <a href="datenschutz.html" style="color:var(--color-mint-green); text-decoration:underline;" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.
+                </label>
               </div>
               <button type="submit" id="contact-submit-btn" class="btn btn--primary btn--lg" style="width:100%"
                 data-i18n="contact.submit">Beratung anfragen <span class="btn__arrow">→</span></button>
